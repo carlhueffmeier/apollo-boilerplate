@@ -1,3 +1,4 @@
+# In every type definition, we extend the Query and Mutation types
 extend type Query {
   Author(id: ID!): Author!
   allAuthors: [Author!]!
