@@ -2,6 +2,7 @@
   "name": "apollo-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for standalone apollo-server 2.0",
+  "repository": "github:carlhueffmeier/apollo-boilerplate",
   "main": "start.js",
   "scripts": {
     "postinstall": "cp -n config.example.js config.js",
