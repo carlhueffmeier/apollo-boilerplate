@@ -8,4 +8,4 @@ dist/
 .DS_Store
 
 # Your private environment config
-variables.env
+config.js

@@ -4,6 +4,7 @@
   "description": "Boilerplate for standalone apollo-server 2.0",
   "main": "start.js",
   "scripts": {
+    "postinstall": "cp -n config.example.js config.js",
     "build": "babel src -d dist",
     "clean": "rimraf dist",
     "serve": "node dist/start.js",
@@ -28,7 +29,6 @@
   },
   "dependencies": {
     "apollo-server": "^2.0.5",
-    "dotenv": "^6.0.0",
     "graphql": "^0.13.2",
     "lodash.merge": "^4.6.1"
   }

@@ -6,14 +6,14 @@ export default {
     name: 'Date',
     description: 'Date custom scalar type',
     // Value from the client
-    parseValue (value) {
+    parseValue(value) {
       return new Date(value).toISOString();
     },
     // Value sent to the client
-    serialize (value) {
+    serialize(value) {
       return value;
     },
-    parseLiteral (ast) {
+    parseLiteral(ast) {
       if (ast.kind === Kind.STRING) {
         return new Date(ast.value).toISOString();
       }
