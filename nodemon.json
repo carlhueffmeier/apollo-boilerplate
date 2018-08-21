@@ -1,0 +1,9 @@
+{
+  "ext": "js,graphql,gql",
+  "exec": "babel-node",
+  "ignore": ["node_modules"],
+  "env": {
+    "NODE_ENV": "development",
+    "BABEL_DISABLE_CACHE": 1
+  }
+}

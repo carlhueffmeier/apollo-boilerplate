@@ -1,0 +1,12 @@
+# GraphQL doesn't allow for empty types (at least not yet!)
+# We can extend these empty `root` types in the other type definitions 👍
+# The root types might also be a good place for general queries / mutations
+# that are not associated with any specific entity
+
+type Query {
+  _empty: String
+}
+
+type Mutation {
+  _empty: String
+}

@@ -1,0 +1,29 @@
+extend type Query {
+  Book(id: ID!): Book!
+  allBooks: [Book!]!
+}
+
+extend type Mutation {
+  updateBook(input: updateBookInput!): updatedBook!
+}
+
+type Book {
+  id: ID!
+  title: String
+  release: Date
+  author: Author
+}
+
+input updateBookInput {
+  id: ID!
+  title: String
+  release: Date
+  author: ID
+}
+
+type updatedBook {
+  id: ID
+  title: String
+  release: Date
+  author: ID
+}

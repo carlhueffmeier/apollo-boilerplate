@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build directory
+dist/
+
+# The annoying files Mac OS X puts into your folders
+.DS_Store
+
+# Your private environment config
+variables.env

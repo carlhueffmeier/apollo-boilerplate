@@ -1,0 +1,7 @@
+{
+  "presets": [
+    "stage-3",
+    ["env", { "targets": { "node": "current" } }]
+  ],
+  "plugins": [["import-graphql", { "runtime": true }]]
+}
